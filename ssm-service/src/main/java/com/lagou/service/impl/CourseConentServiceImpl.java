@@ -112,4 +112,17 @@ public class CourseConentServiceImpl implements CourseConentService {
         int a;
     }
 
+    void testGit(){
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(1);
+        System.out.println(1);
+        System.out.println(1);
+        System.out.println(1);
+        System.out.println(1);
+        System.out.println(1);
+    }
+
 }

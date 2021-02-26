@@ -22,4 +22,5 @@ public interface CourseConentService {
     void updateLession(CourseLesson courseLession);
 
     void updateLessionStatus(int id, int status);
+
 }
