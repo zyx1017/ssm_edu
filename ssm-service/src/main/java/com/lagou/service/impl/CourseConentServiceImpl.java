@@ -108,4 +108,8 @@ public class CourseConentServiceImpl implements CourseConentService {
         courseContentMapper.updateLessionStatus(courseLesson);
     }
 
+    void testGit1234567(){
+        int a;
+    }
+
 }
