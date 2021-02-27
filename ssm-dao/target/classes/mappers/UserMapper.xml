@@ -72,6 +72,10 @@
         </foreach>
     </select>
 
+    <select id="findUserById" parameterType="int" resultType="com.lagou.domain.User">
+        select * from user where id = #{id}
+    </select>
+
 
 
 </mapper>

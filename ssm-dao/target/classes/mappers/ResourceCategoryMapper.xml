@@ -8,4 +8,20 @@
         select * from resource_category
     </select>
 
+    <insert id="saveResourceCategory" parameterType="com.lagou.domain.ResourceCategory">
+        insert into resource_category values(null,#{name},#{sort},#{createTime},#{updatedTime},#{createdBy},#{updatedBy})
+    </insert>
+
+    <select id="findResourceCategoryById" parameterType="int" resultType="com.lagou.domain.ResourceCategory">
+        select id,`name`,`sort` from  resource_category where id =#{id}
+    </select>
+
+    <update id="updateResourceCategory" parameterType="com.lagou.domain.ResourceCategory">
+        update resource_category set `name` =#{name},`sort`=#{sort},`update_by`=#{updateBy},updateTime=#{updateTime} where id =#{id}
+    </update>
+
+    <delete id="deleteResourceCategory" parameterType="int">
+        delete from resource_category where id = #{id}
+    </delete>
+
 </mapper>

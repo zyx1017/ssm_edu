@@ -58,8 +58,8 @@ public class PromotionAdController {
         // D:\apache-tomcat-8.5.56\webapps\ssm-web\
         String realPath = request.getServletContext().getRealPath("/");
         // D:\apache-tomcat-8.5.56\webapps
-        String substring = realPath/*.substring(0, realPath.indexOf("ssm-web"))*/;
-
+//        String substring = realPath/*.substring(0, realPath.indexOf("ssm-web"))*/;
+        String substring = realPath.substring(0, realPath.indexOf("ssm-web"));
 
 
         //3.获取原文件名
